@@ -14,6 +14,14 @@
 		A90E19151B58CAC600426170 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90E19141B58CAC600426170 /* Images.xcassets */; };
 		A90E19181B58CAC600426170 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E19161B58CAC600426170 /* LaunchScreen.xib */; };
 		A90E19241B58CAC600426170 /* ScanperipheralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E19231B58CAC600426170 /* ScanperipheralTests.m */; };
+		A90E19311B58D0EA00426170 /* LVTools.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E19301B58D0EA00426170 /* LVTools.m */; };
+		A90E19341B58D11200426170 /* AppDelegate+LVSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E19331B58D11200426170 /* AppDelegate+LVSet.m */; };
+		A90E19371B58D2CD00426170 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90E19361B58D2CD00426170 /* CoreBluetooth.framework */; };
+		A90E193D1B58D71000426170 /* ScanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E193C1B58D71000426170 /* ScanTableViewController.m */; };
+		A90E19401B58D85400426170 /* LVBlueCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E193F1B58D85400426170 /* LVBlueCentral.m */; };
+		A90E19431B58D86900426170 /* LVBluePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = A90E19421B58D86900426170 /* LVBluePeripheral.m */; };
+		A9CBB99E1B58E00900FA084A /* BLEInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CBB99D1B58E00900FA084A /* BLEInfo.m */; };
+		A9D956111B5A3CE2002B76E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D956101B5A3CE2002B76E4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,22 @@
 		A90E191D1B58CAC600426170 /* ScanperipheralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanperipheralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90E19221B58CAC600426170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A90E19231B58CAC600426170 /* ScanperipheralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanperipheralTests.m; sourceTree = "<group>"; };
+		A90E192F1B58D0EA00426170 /* LVTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVTools.h; sourceTree = "<group>"; };
+		A90E19301B58D0EA00426170 /* LVTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVTools.m; sourceTree = "<group>"; };
+		A90E19321B58D11200426170 /* AppDelegate+LVSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LVSet.h"; sourceTree = "<group>"; };
+		A90E19331B58D11200426170 /* AppDelegate+LVSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LVSet.m"; sourceTree = "<group>"; };
+		A90E19351B58D2A800426170 /* Scanperipheral.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanperipheral.pch; sourceTree = "<group>"; };
+		A90E19361B58D2CD00426170 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A90E19381B58D40200426170 /* AppuserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppuserInfo.h; sourceTree = "<group>"; };
+		A90E193B1B58D71000426170 /* ScanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanTableViewController.h; sourceTree = "<group>"; };
+		A90E193C1B58D71000426170 /* ScanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanTableViewController.m; sourceTree = "<group>"; };
+		A90E193E1B58D85400426170 /* LVBlueCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBlueCentral.h; sourceTree = "<group>"; };
+		A90E193F1B58D85400426170 /* LVBlueCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBlueCentral.m; sourceTree = "<group>"; };
+		A90E19411B58D86900426170 /* LVBluePeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVBluePeripheral.h; sourceTree = "<group>"; };
+		A90E19421B58D86900426170 /* LVBluePeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVBluePeripheral.m; sourceTree = "<group>"; };
+		A9CBB99C1B58E00900FA084A /* BLEInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEInfo.h; sourceTree = "<group>"; };
+		A9CBB99D1B58E00900FA084A /* BLEInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEInfo.m; sourceTree = "<group>"; };
+		A9D956101B5A3CE2002B76E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D956111B5A3CE2002B76E4 /* CoreLocation.framework in Frameworks */,
+				A90E19371B58D2CD00426170 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,11 @@
 		A90E18FB1B58CAC600426170 = {
 			isa = PBXGroup;
 			children = (
+				A9D956101B5A3CE2002B76E4 /* CoreLocation.framework */,
+				A90E19361B58D2CD00426170 /* CoreBluetooth.framework */,
+				A9CBB99B1B58DFF000FA084A /* Models */,
+				A90E193A1B58D6FB00426170 /* ViewControllers */,
+				A90E192D1B58D09D00426170 /* Public */,
 				A90E19061B58CAC600426170 /* Scanperipheral */,
 				A90E19201B58CAC600426170 /* ScanperipheralTests */,
 				A90E19051B58CAC600426170 /* Products */,
@@ -98,6 +129,8 @@
 			children = (
 				A90E19081B58CAC600426170 /* Info.plist */,
 				A90E19091B58CAC600426170 /* main.m */,
+				A90E19351B58D2A800426170 /* Scanperipheral.pch */,
+				A90E19381B58D40200426170 /* AppuserInfo.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +150,55 @@
 				A90E19221B58CAC600426170 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90E192D1B58D09D00426170 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A90E19391B58D63700426170 /* BluetoothManager */,
+				A90E192E1B58D0AE00426170 /* LVCategory */,
+				A90E192F1B58D0EA00426170 /* LVTools.h */,
+				A90E19301B58D0EA00426170 /* LVTools.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		A90E192E1B58D0AE00426170 /* LVCategory */ = {
+			isa = PBXGroup;
+			children = (
+				A90E19321B58D11200426170 /* AppDelegate+LVSet.h */,
+				A90E19331B58D11200426170 /* AppDelegate+LVSet.m */,
+			);
+			path = LVCategory;
+			sourceTree = "<group>";
+		};
+		A90E19391B58D63700426170 /* BluetoothManager */ = {
+			isa = PBXGroup;
+			children = (
+				A90E193E1B58D85400426170 /* LVBlueCentral.h */,
+				A90E193F1B58D85400426170 /* LVBlueCentral.m */,
+				A90E19411B58D86900426170 /* LVBluePeripheral.h */,
+				A90E19421B58D86900426170 /* LVBluePeripheral.m */,
+			);
+			path = BluetoothManager;
+			sourceTree = "<group>";
+		};
+		A90E193A1B58D6FB00426170 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A90E193B1B58D71000426170 /* ScanTableViewController.h */,
+				A90E193C1B58D71000426170 /* ScanTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9CBB99B1B58DFF000FA084A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9CBB99C1B58E00900FA084A /* BLEInfo.h */,
+				A9CBB99D1B58E00900FA084A /* BLEInfo.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +250,15 @@
 				TargetAttributes = {
 					A90E19031B58CAC600426170 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = YAYKB757UM;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					A90E191C1B58CAC600426170 = {
 						CreatedOnToolsVersion = 6.4;
@@ -219,9 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90E193D1B58D71000426170 /* ScanTableViewController.m in Sources */,
 				A90E19101B58CAC600426170 /* ViewController.m in Sources */,
+				A90E19341B58D11200426170 /* AppDelegate+LVSet.m in Sources */,
+				A90E19431B58D86900426170 /* LVBluePeripheral.m in Sources */,
+				A90E19401B58D85400426170 /* LVBlueCentral.m in Sources */,
 				A90E190D1B58CAC600426170 /* AppDelegate.m in Sources */,
 				A90E190A1B58CAC600426170 /* main.m in Sources */,
+				A9CBB99E1B58E00900FA084A /* BLEInfo.m in Sources */,
+				A90E19311B58D0EA00426170 /* LVTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +444,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = Scanperipheral/Scanperipheral.pch;
 				INFOPLIST_FILE = Scanperipheral/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,9 +460,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = Scanperipheral/Scanperipheral.pch;
 				INFOPLIST_FILE = Scanperipheral/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -416,6 +525,7 @@
 				A90E19291B58CAC600426170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A90E192A1B58CAC600426170 /* Build configuration list for PBXNativeTarget "ScanperipheralTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +534,7 @@
 				A90E192C1B58CAC600426170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

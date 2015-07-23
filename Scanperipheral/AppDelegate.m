@@ -7,8 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+LVSet.h"
+#import "ScanTableViewController.h"
 
-@interface AppDelegate ()
+#import <CoreLocation/CoreLocation.h>
+
+
+@interface AppDelegate ()<CLLocationManagerDelegate>
+
+@property (nonatomic, strong) CLLocationManager * locationManager;
+
 
 @end
 
@@ -16,9 +24,49 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self initlizationSet];
+    [self startLocation];
+    [self initCreateFile];
+    
+    ScanTableViewController * vc = [[ScanTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    vc.title = [kLVUserDefault objectForKey:kLVUserUUID];
+    UINavigationController * nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nc;
+
     return YES;
 }
+
+- (void)startLocation
+{
+    self.locationManager = [[CLLocationManager alloc] init];
+ 
+    if ([self.locationManager locationServicesEnabled])
+    {
+        self.locationManager.delegate = self;
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager.distanceFilter = 10.0f;
+        [self.locationManager startUpdatingLocation];
+        
+        if ([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0)
+        {
+            [_locationManager requestAlwaysAuthorization];
+        }
+
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation * location = [locations objectAtIndex:0];
+    
+    if (location)
+    {
+        [kLVUserDefault setValue:[NSString stringWithFormat:@"%f",location.coordinate.latitude] forKey:kLVLat];
+        [kLVUserDefault setValue:[NSString stringWithFormat:@"%f",location.coordinate.longitude] forKey:kLVlng];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
