@@ -76,7 +76,7 @@
 - (void)qingkong
 {
     NSString * dataPath = [kLVUserDefault objectForKey:kLVOne];
-    [@" " writeToFile:dataPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    [@"" writeToFile:dataPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 
 - (void)didReceiveMemoryWarning

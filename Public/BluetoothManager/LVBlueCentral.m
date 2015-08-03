@@ -49,9 +49,6 @@
     NSString * lng = [kLVUserDefault objectForKey:kLVlng];
     
     NSString * dataContent = [NSString stringWithFormat:@"\n%@ %@ %@ %@",uuid,RSSI,lat,lng];
-    
-    NSLog(@"%@",dataContent);
-    
     NSData * data = [dataContent dataUsingEncoding:NSUTF8StringEncoding];
     [handle writeData:data];
     

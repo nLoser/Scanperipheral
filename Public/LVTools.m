@@ -27,7 +27,7 @@
 + (float)GetcalcDistByRSSI:(int)rssi
 {
     int iRssi = abs(rssi);
-    float power = (iRssi-59)/(10*(20*log(2.4)+32.5));
+    float power = (iRssi-59)/(10*2.4);
     return pow(10, power);
 }
 

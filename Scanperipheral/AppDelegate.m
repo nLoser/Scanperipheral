@@ -33,6 +33,8 @@
     vc.title = [kLVUserDefault objectForKey:kLVUserUUID];
     UINavigationController * nc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nc;
+    
+    NSLog(@"----%f",[LVTools GetcalcDistByRSSI:97]);
 
     return YES;
 }
